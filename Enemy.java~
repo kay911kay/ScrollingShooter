@@ -1,0 +1,6 @@
+public class Enemy extends AllPeople {
+  
+  public Enemy(int px,int py,int teHeight,int teWidth,int teSpeed) {
+    super(px,py,teHeight,teWidth,teSpeed);
+  }
+}

@@ -1,0 +1,43 @@
+public class Character extends AllPeople {
+  int ammo = 10, health = 10;
+  
+  public Character() {
+    super(275,620,50,60,10);
+  }
+  
+  public void moveLeft() {
+    if (x > 0 + speed + 4)
+      x-=speed;
+  }
+  
+  public void moveRight() {
+    if (x < 600 - speed - width - 4)
+      x+=speed;
+  }
+  
+  public void moveUp() {
+    if (y > 0 + speed + 21)
+      y-=speed;
+  }
+  
+  public void moveDown() {
+    if (y < 800 - speed - height - 5)
+      y+=speed;
+  }
+  
+  public int getHealth() {
+    return health;
+  }
+  
+  public void lowerHealth(int dmg) {
+    health -= dmg;
+  }
+  
+  public int getAmmo() {
+    return ammo;
+  }
+  
+  public void setAmmo(int ammoChange) {
+    ammo += ammoChange;
+  }
+}

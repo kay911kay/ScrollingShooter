@@ -1,0 +1,51 @@
+public class AllPeople {
+  int x,y,width,height,speed;
+  
+  public AllPeople(int px,int py,int teWidth,int teHeight,int aSpeed) {
+    x = px;
+    y = py;
+    width = teWidth;
+    height = teHeight;
+    speed = aSpeed;
+  }
+  
+  public int getX() {
+    return x;
+  }
+  
+  public int getY() {
+    return y;
+  }
+  
+  public void setX(int newX) {
+    x = newX;
+  }
+  
+  public void setY(int newY) {
+    y = newY;
+  }
+  
+  public int getWidth() {
+    return width;
+  }
+  
+  public int getHeight() {
+    return height;
+  }
+  
+  public void moveLeft() {
+    x-=speed;
+  }
+  
+  public void moveRight() {
+    x+=speed;
+  }
+  
+  public void moveUp() {
+    y-=speed;
+  }
+  
+  public void moveDown() {
+    y+=speed;
+  }
+}
